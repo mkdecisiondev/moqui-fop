@@ -72,14 +72,6 @@ dependencies {
         exclude group: 'org.mozilla'
         exclude group: 'org.python'
     }
-    compile ('org.apache.xmlgraphics:batik-constants:1.14') {
-        exclude group: 'org.mozilla'
-        exclude group: 'org.python'
-    }
-    compile ('org.apache.xmlgraphics:batik-i18n:1.14') {
-        exclude group: 'org.mozilla'
-        exclude group: 'org.python'
-    }
 
     // NOTE: in theory Apache Avalon is not required for FOP 2.6, but getting runtime errors without it
     compile group: 'org.apache.avalon.framework', name: 'avalon-framework-api', version: '4.3.1'
