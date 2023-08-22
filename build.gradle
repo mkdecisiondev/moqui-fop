@@ -95,6 +95,7 @@ dependencies {
     // CSSBox (HTML/CSS to SVG, etc)
     implementation ('net.sf.cssbox:cssbox:4.17') { // LGPL <== NOTE!
         exclude group: 'xalan'
+        exclude group: 'net.sourceforge.nekohtml'
         exclude group: 'xml-apis' // can't exclude batik-ext but has some same classes as xml-apis so exclude that
     }
     // NOTE: this comes from a custom build, see: https://github.com/jonesde/CSSBoxPdf
