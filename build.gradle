@@ -85,8 +85,6 @@ dependencies {
     implementation group: 'org.apache.avalon.framework', name: 'avalon-framework-api', version: '4.3.1'
     implementation group: 'org.apache.avalon.framework', name: 'avalon-framework-impl', version: '4.3.1'
 
-    implementation 'xerces:xercesImpl:2.12.2'
-
     // barcode4j as a module to avoid required dependency on ant
     implementation module('net.sf.barcode4j:barcode4j:2.1')
     implementation module('net.sf.barcode4j:barcode4j-fop-ext:2.1')
@@ -99,6 +97,9 @@ dependencies {
     }
     // NOTE: this comes from a custom build, see: https://github.com/jonesde/CSSBoxPdf
     implementation name: 'cssbox-pdf', version: '1.0-SNAPSHOT' // LGPL <== NOTE!
+
+    // explicit dependencies to get newer versions
+    implementation 'xerces:xercesImpl:2.12.2'
 }
 
 // by default the Java plugin runs test on build, change to not do that (only run test if explicit task)
